@@ -1,0 +1,8 @@
+.DS_Store
+
+.idea
+*.iml
+
+.env
+/front/node_modules
+/back/node_modules
