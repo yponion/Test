@@ -5,7 +5,7 @@ const {Data} = require("./models/data");
 
 const server = async () => {
     try {
-        const {MONGO_URI, FRONT_PORT, BACK_PORT} = process.env
+        const {MONGO_URI, BACK_PORT} = process.env
         if (!MONGO_URI) throw new Error("MONGO_URI is required!!!")
 
         await mongoose.connect(MONGO_URI);
